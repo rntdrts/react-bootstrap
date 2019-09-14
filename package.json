@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.js --env development  --hot --inline --history-api-fallback --disable-host-check",
+    "start": "webpack-dev-server --config webpack.dev.js --env development --hot --inline --history-api-fallback --port=8080 --disable-host-check",
+    "start:docker": "webpack-dev-server --config webpack.dev.js --env development --hot --inline --history-api-fallback --host=0.0.0.0 --port=3030",
     "build:test": "webpack --config webpack.prod.js --env development",
     "deploy:production": "webpack --config webpack.deploy.js --env production",
     "test": "jest",
