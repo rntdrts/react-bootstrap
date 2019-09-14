@@ -11,6 +11,10 @@ module.exports = env =>
       chunkFilename: '[name].[hash].js',
       publicPath: `${process.env.PUBLIC_PATH}/`
     },
+    watchOptions: {
+      aggregateTimeout: 300,
+      poll: 5000
+    },
     module: {
       rules: [
         {
