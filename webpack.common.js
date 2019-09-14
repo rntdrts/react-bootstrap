@@ -15,8 +15,9 @@ const getLoaders = useModules => [
   {
     loader: 'css-loader',
     options: {
-      modules: useModules,
-      localIdentName: '[local]--[hash:base64:5]',
+      modules: {
+        localIdentName: '[local]--[hash:base64:5]',
+      },
       url: false
     }
   },
