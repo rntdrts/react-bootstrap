@@ -4,7 +4,7 @@ const dotenv = require('dotenv');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
@@ -43,7 +43,7 @@ module.exports = env => {
         ]
       }
     }),
-    new CleanWebpackPlugin('dist', {}),
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       inject: false,
       hash: true,
