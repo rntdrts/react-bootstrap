@@ -1,0 +1,18 @@
+# IDEs
+.vscode
+
+# Modules
+node_modules/
+
+# build
+dist/
+
+# local dev
+.env
+.env.production
+
+# others
+.DS_Store
+*.log
+
+credentials.json
