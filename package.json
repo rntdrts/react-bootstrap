@@ -54,7 +54,7 @@
     "jest": "^24.8.0",
     "jest-expect-message": "^1.0.2",
     "node-sass": "^4.12.0",
-    "prettier": "^1.16.4",
+    "prettier": "^1.19.1",
     "react-test-renderer": "^16.8.3",
     "sass-loader": "^7.1.0",
     "sass-resources-loader": "^2.0.0",
